@@ -1,0 +1,29 @@
+{
+  "name": "gitcideva",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "devDependencies": {
+    "jest": "^30.2.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "scripts": {
+  "test": "jest"
+},
+
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Alexandre-le-Grand/Exam-git.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Alexandre-le-Grand/Exam-git/issues"
+  },
+  "homepage": "https://github.com/Alexandre-le-Grand/Exam-git#readme"
+
+
+}
