@@ -13,6 +13,10 @@ function toggleTask(id) {
   if (!task) throw new Error('Task not found');
   task.done = !task.done;
   return task;
+
+}
+function countDone() {
+  return tasks.filter(t => t.done).length;
 }
 
 function getTasks() {
@@ -24,4 +28,4 @@ function reset() {
   nextId = 1;
 }
 
-module.exports = { addTask, toggleTask, getTasks, reset };
+module.exports = { addTask, toggleTask, getTasks, reset, countDone, tasks };

@@ -23,6 +23,16 @@ test('toggleTask toggles done', () => {
   expect(task.done).toBe(false);
 });
 
+test('countDone counts correctly', () => {
+  const t1 = addTask('Task 1');
+  const t2 = addTask('Task 2');
+  toggleTask(t1.id);
+  expect(countDone()).toBe(1);
+  toggleTask(t2.id);
+  expect(countDone()).toBe(2);
+});
+
+
 test('toggleTask throws if id invalid', () => {
   expect(() => toggleTask(999)).toThrow('Task not found');
 });
