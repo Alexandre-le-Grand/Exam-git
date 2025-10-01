@@ -1,17 +1,10 @@
-
-// Simple in-memory task list
 let tasks = [];
-let nextId = 1;
 
-
-function getTasks() {
-  return tasks;
+function addTask(name) {
+    if (!name || typeof name !== 'string') throw new Error('Invalid name');
+    const task = { id: Date.now(), name: name.trim(), done: false };
+    tasks.push(task);
+    return task;
 }
 
-
-function reset() {
-  tasks = [];
-  nextId = 1;
-}
-
-module.exports = { getTasks, reset };
+module.exports = { addTask, tasks }; 
